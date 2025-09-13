@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Study Platform</title>
+<style>
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #375a7f;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 6px #0001;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #f9d342;
+}
+
+.container {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 720px;
+  box-shadow: 0 2px 16px #0002;
+}
+
+button {
+  background-color: #375a7f;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #233554;
+}
+
+.dashboard .stat {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.chart-placeholder {
+  background: #f0f3fa;
+  border: 1px dashed #bfc8da;
+  border-radius: 6px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bfc8da;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1.2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+  .container { max-width: 98vw; padding: 1rem;}
+  nav ul { gap: 1rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Smart Study Dashboard</h1>
+  <nav>
+    <ul>
+      <li><a href="#upload">Document Upload</a></li>
+      <li><a href="#assessment">Assessments</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#recommendations">AI Recommendations</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="upload" class="container">
+  <h2>Upload Study Material</h2>
+  <input type="file" multiple>
+  <button>Process Documents</button>
+</section>
+
+<section id="assessment" class="container">
+  <h2>Automated Assessment</h2>
+  <button>Generate Quiz</button>
+  <div class="assessment-output"></div>
+</section>
+
+<section id="analytics" class="container">
+  <h2>Progress Analytics</h2>
+  <div class="dashboard">
+    <div class="stat">Topics Completed: <span>7</span></div>
+    <div class="stat">Average Score: <span>87%</span></div>
+    <div class="chart-placeholder">[Analytics Chart Here]</div>
+  </div>
+</section>
+
+<section id="recommendations" class="container">
+  <h2>AI Study Recommendations</h2>
+  <p>Next suggested topics: Linear Algebra, Data Structures</p>
+  <p>Tips: Spend more time on Probability</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Smart Study Platform</p>
+</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Study Platform</title>
+<style>
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #375a7f;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 6px #0001;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #f9d342;
+}
+
+.container {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 720px;
+  box-shadow: 0 2px 16px #0002;
+}
+
+button {
+  background-color: #375a7f;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #233554;
+}
+
+.dashboard .stat {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.chart-placeholder {
+  background: #f0f3fa;
+  border: 1px dashed #bfc8da;
+  border-radius: 6px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bfc8da;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1.2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+  .container { max-width: 98vw; padding: 1rem;}
+  nav ul { gap: 1rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Smart Study Dashboard</h1>
+  <nav>
+    <ul>
+      <li><a href="#upload">Document Upload</a></li>
+      <li><a href="#assessment">Assessments</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#recommendations">AI Recommendations</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="upload" class="container">
+  <h2>Upload Study Material</h2>
+  <input type="file" multiple>
+  <button>Process Documents</button>
+</section>
+
+<section id="assessment" class="container">
+  <h2>Automated Assessment</h2>
+  <button>Generate Quiz</button>
+  <div class="assessment-output"></div>
+</section>
+
+<section id="analytics" class="container">
+  <h2>Progress Analytics</h2>
+  <div class="dashboard">
+    <div class="stat">Topics Completed: <span>7</span></div>
+    <div class="stat">Average Score: <span>87%</span></div>
+    <div class="chart-placeholder">[Analytics Chart Here]</div>
+  </div>
+</section>
+
+<section id="recommendations" class="container">
+  <h2>AI Study Recommendations</h2>
+  <p>Next suggested topics: Linear Algebra, Data Structures</p>
+  <p>Tips: Spend more time on Probability</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Smart Study Platform</p>
+</footer>
+</body>
+</html>
